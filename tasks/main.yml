@@ -1,0 +1,8 @@
+---
+# tasks file for roles/monit-php-fpm
+- name: install monit
+  apt: name=monit
+  
+- name: monit config for rd
+  template: src=php-fpm.conf dest=/etc/monit/conf.d/php-fpm.conf
+  notify: reload monit

@@ -1,0 +1,4 @@
+---
+# handlers file for roles/monit-php-fpm
+- name: reload monit
+  service: name=monit state=reloaded

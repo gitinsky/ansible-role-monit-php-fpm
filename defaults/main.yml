@@ -1,0 +1,4 @@
+---
+# defaults file for roles/monit-php-fpm
+monit_php_fpm_emails: []
+monit_php_fpm_url: http://127.0.0.1/index.php
